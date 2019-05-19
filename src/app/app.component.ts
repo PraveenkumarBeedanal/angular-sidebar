@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
 
+  display = false;
+
+    info(){
+      if(!this.display) {
+      this.display = true;
+      }else{
+        this.display=false;
+      }
+    }
+
+  onHide(){
+    
+    console.log("this is working");
+    
+  }
 }

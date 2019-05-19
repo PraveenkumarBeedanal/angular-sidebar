@@ -9,6 +9,9 @@ import {SecondPageComponent} from './firstPage/secondPage/second-page.component'
 
 import { HelloComponent } from './hello.component';
 import {SidebarModule} from 'primeng/sidebar';
+import {BrowserModule} from '@angular/platform-browser';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const appRoutes: Routes = [
   { path: 'firstPage', component: FirstPageComponent },
@@ -21,7 +24,9 @@ const appRoutes: Routes = [
       appRoutes,
       { enableTracing: false } // <-- debugging purposes only
     ),
-    BrowserModule, FormsModule, SidebarModule ],
+    BrowserModule, FormsModule, SidebarModule, 
+    BrowserAnimationsModule, BrowserModule ],
+
   declarations: [ AppComponent, HelloComponent, 
   FirstPageComponent, SecondPageComponent ],
   bootstrap:    [ AppComponent ]

@@ -4,3 +4,11 @@
   <a routerLink="/secondPage" routerLinkActive="active">SecondPage</a>
 </nav>
 <router-outlet></router-outlet>
+
+<p-sidebar [(visible)]= " display" 
+position = "bottom" [style]="{width:'30em'}" 
+(onHide) = "onHide()">
+    Content
+</p-sidebar>
+
+<button type="text" (click)="info()" pButton icon="pi pi-plus" label="Show">click me</button>
